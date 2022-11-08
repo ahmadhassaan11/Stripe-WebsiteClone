@@ -1,17 +1,19 @@
 import React from 'react'
 import styled from "styled-components";
+import { mobile } from "../responsive"
 
 const Container = styled.div`
-  flex: 1;
+  
   margin: 3px;
   width: 540px;
+  max-width: 540px ;
   height: 184px;
   position: relative;
 `;
 
 const Info = styled.div`
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -39,12 +41,12 @@ font-weight: bold;
 
 const Desc = styled.p`
 color: #425466;
-    margin: 20px 0px;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-start: 10px;
+    margin-block-end: 60px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    ${mobile({ width: "60%" })}
   `;
 
 const InfoBlock = ({ item }) => {

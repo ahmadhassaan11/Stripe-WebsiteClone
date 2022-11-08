@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { reviewInfo } from '../data';
 import InfoBlock from './InfoBlock';
 import TitleBlock from './TitleBlock';
+import { mobile } from "../responsive"
 
 const Container = styled.div`
  display: flex;
@@ -20,6 +21,8 @@ const Info = styled.div`
   justify-content: left;
   flex-direction: row;
   position: absolute;
+  ${mobile({  marginLeft: "-20%"  })}
+
 `;
 
 const InfoB = styled.div`

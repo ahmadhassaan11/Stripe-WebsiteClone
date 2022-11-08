@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { reviewInfo } from '../data';
 import InfoBlock from './InfoBlock';
 import TitleBlock from './TitleBlock';
+import { mobile } from "../responsive"
 
 const Container = styled.div`
  display: flex;
@@ -12,6 +13,7 @@ const Container = styled.div`
   position: relative;
   overflow: hidden;
   height: 874px;
+  ${mobile({ height: "1000px" })}
 `;
 
 const Info = styled.div`
@@ -20,6 +22,8 @@ const Info = styled.div`
   justify-content: left;
   flex-direction: column;
   position: absolute;
+  ${mobile({ marginLeft: "-20%" })}
+
 `;
 
 const InfoB = styled.div`

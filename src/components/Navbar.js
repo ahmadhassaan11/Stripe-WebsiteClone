@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { mobile } from "../responsive"
-import { FaBars } from 'react-icons/fa'
-import atlas from '../images/atlas.svg'
 import { useGlobalContext } from '../context'
 
 const Container = styled.div`
@@ -47,15 +45,6 @@ justify-content: flex-end;
 ${mobile({ flex: 2, justifyContent: "center" })}
 `;
 
-const BottomNav = styled.div`
-flex:1;
-display: flex;
-align-items:right;
-margin-left: 30%;
-margin-top:60px ;
-justify-content: flex-end;
-${mobile({ flex: 2, justifyContent: "center" })}
-`;
 
 const MenuItem = styled.div`
     font-size: 14px;
@@ -70,27 +59,6 @@ const MenuItem = styled.div`
 color: grey; 
 }
 `
-
-const Button = styled.button`
-
-  font-size: 1rem;
-  margin-left: 30% ;
-  padding: 6px 12px 6px 6px;
-  border-radius: 1rem;
-  border-color: transparent;
-  color: white;
-  background: #ff7600;
-  cursor: pointer;
-  transition: all 0.3s linear;
-  min-width: 90px;
-justify-content: flex-end;
-align-items:right ;
-
-&:hover{
-
-    background-color: black; 
-}
-`;
 
 const ArrowBtn = styled.div`
    display: flex;
@@ -175,9 +143,8 @@ const Navbarr = () => {
                     <MenuItem className='menu' onMouseOver={displaySubmenu}>solutions</MenuItem>
                     <MenuItem className='menu' onMouseOver={displaySubmenu}>developers</MenuItem>
                     <MenuItem className='menu' onMouseOver={displaySubmenu}>resources</MenuItem>
-                    <MenuItem className='menu' onMouseOver={displaySubmenu}>pricing</MenuItem>
+                    <MenuItem >pricing</MenuItem>
                 </Right>
-                {/* <Button>Sign In</Button> */}
                 <ArrowBtn>SignIn<span className="arrow"></span></ArrowBtn>
             </Wrapper>
         </Container>

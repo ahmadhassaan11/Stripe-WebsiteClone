@@ -1,26 +1,33 @@
 import React from 'react'
-import atlas from '../images/atlas.svg'
 import styled from 'styled-components'
 import { mobile } from "../responsive"
+import atlas from '../images/atlas.svg'
 
 const Container = styled.div`
-display: flex;
+display:flex;
+ margin-top: 10px;
   position: relative;
   overflow: hidden;
-    height: 200px;
-    ${mobile({ height: "47px" })}
+    height: 50px;
+    ${mobile({ height: "57px", marginLeft: "-30px" })}
 
 `;
 const Wrapper = styled.div`
-  margin-left: 10%;
+  margin-left: 15%;
   justify-content: left;
   flex-direction: row;
   position: absolute;
-    padding: 10px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     ${mobile({ padding: "10px 0px" })}
+`;
+
+
+const Left = styled.div`
+    flex:1;
+    text-align: Left;
 `;
 
 const Logo = styled.h3`
@@ -33,19 +40,10 @@ const Right = styled.div`
 flex:1;
 display: flex;
 align-items:center;
+justify-content: center;
 margin-left: 30% ;
 justify-content: flex-end;
-${mobile({ flex: 2, justifyContent: "center" })}
-`;
-
-const BottomNav = styled.div`
-flex:1;
-display: flex;
-align-items:right;
-margin-left: 30%;
-margin-top:60px ;
-justify-content: flex-end;
-${mobile({ flex: 2, justifyContent: "center" })}
+${mobile({ flex: 2, justifyContent: "center", marginBottom: "40px", marginLeft: "60%"  })}
 `;
 
 const MenuItem = styled.div`
@@ -62,20 +60,22 @@ color: grey;
 }
 `
 
-const Navbar2 = () => {
 
+
+const Navbar2 = () => {
     return (
         <Container>
             <Wrapper>
-                <BottomNav>
-                    <img src={atlas} />   <Logo style={{ color: "#ff7600", marginTop: "5px", marginLeft: "15px" }}> Atlas</Logo>
+                <Left>
+                {/* <img src={atlas} /> */}
+                  <Logo style={{ color: "#ff7600", marginTop: "5px", marginLeft: "5px" }}> Atlas</Logo>
+                </Left>
 
-                    <Right>
-                        <MenuItem style={{ marginLeft: "500px" }}>overview</MenuItem>
-                        <MenuItem style={{ color: "#ff7600" }}>guides</MenuItem>
-                        <MenuItem style={{ color: "#ff7600" }}>docs</MenuItem>
-                    </Right>
-                </BottomNav>
+                <Right>
+                    <MenuItem >overview</MenuItem>
+                    <MenuItem style={{ color: "#ff7600" }}>guides</MenuItem>
+                    <MenuItem style={{ color: "#ff7600" }}>docs</MenuItem>
+                </Right>
             </Wrapper>
         </Container>
     )

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useGlobalContext } from '../context'
 import styled from 'styled-components';
+import { mobile } from "../responsive"
 
 const Container = styled.div`
  display: flex;
@@ -17,6 +18,7 @@ top: 0px;
   justify-content: left;
   flex-direction: column;
   position: absolute;
+  ${mobile({  marginLeft: "-20%"  })}
 `;
 
 const Heading = styled.div`
@@ -25,6 +27,7 @@ margin-bottom: 0px;
 margin-top: 0px;
 font-weight: bold;
 font-size: 50px;
+${mobile({  maxWidth: "60%"  })}
 `;
 
 const Desc = styled.p`
@@ -36,29 +39,9 @@ color: #425466;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+${mobile({  maxWidth: "50%"  })}
+
   `;
-
-const Button = styled.button`
-
-font-size: 1rem;
-font-weight: 20;
-margin-left: 0% ;
-padding: 6px 12px 6px 16px;
-border-radius: 1rem;
-border-color: transparent;
-color: white;
-background: #ff7600;
-cursor: pointer;
-transition: var(--transition);
-min-width: 90px;
-justify-content: flex-end;
-align-items:right ;
-
-&:hover{
-
-  background-color: black; 
-}
-`;
 
 const HeroSvg = styled.div`
   position: absolute;

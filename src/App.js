@@ -11,16 +11,16 @@ import Working from './components/Working'
 import Companies from './components/Companies'
 import Process from './components/Process'
 import Pricing from './components/Pricing'
-import Card from './components/Card'
+import Nav2 from './components/Nav2'
 function App() {
   return (
     <>
-      <Navbar />
-      <Navbar2 />
+      <Nav2 />
+      {/* <Navbar />
+      <Navbar2 /> */}
       <Sidebar />
       <Hero />
       <Submenu />
-      {/* <Card/> */}
       <Review />
       <Working />
       <Companies />

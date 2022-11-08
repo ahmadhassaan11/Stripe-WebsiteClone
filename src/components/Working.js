@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { reviewInfo } from '../data';
 import InfoBlock from './InfoBlock';
 import TitleBlock from './TitleBlock';
+import { mobile } from "../responsive"
 
 const Container = styled.div`
  display: flex;
@@ -13,6 +14,7 @@ const Container = styled.div`
   position: relative;
   overflow: hidden;
   height: 1467px;
+  ${mobile({ height: "1700px" })}
 `;
 
 const Info = styled.div`
@@ -21,6 +23,7 @@ const Info = styled.div`
   justify-content: left;
   flex-direction: column;
   position: absolute;
+  ${mobile({  marginLeft: "-20%"  })}
 `;
 
 const ImgContainer = styled.div`
@@ -35,9 +38,10 @@ margin-top: 555px;
 width: 1080px;
 height: 591px;
 left: calc(50% - 1080px/2);
-top: 20px;
+top: 350px;
 border-radius: 10px;
 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+${mobile({  marginTop: "900px", width: "358px", height: "195px", marginLeft: "93%"  })}
 `;
 
 

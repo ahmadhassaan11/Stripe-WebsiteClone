@@ -1,5 +1,5 @@
-import { Send } from "@material-ui/icons";
 import styled from "styled-components";
+import { mobile } from "../responsive"
 
 const Container = styled.div`
  display: flex;
@@ -17,6 +17,8 @@ const Info = styled.div`
   justify-content: left;
   flex-direction: column;
   position: absolute;
+  ${mobile({  marginLeft: "-20%"  })}
+
 `;
 
 const Title = styled.p`
