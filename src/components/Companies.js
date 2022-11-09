@@ -26,18 +26,20 @@ const Info = styled.div`
 `;
 const ImgContainer = styled.div`
   height: 100%;
-  width: 80%;
+  justify-content: center;
   flex: 1;
 `;
 
 const Image = styled.img`
-position: relative;
-margin-top: 200px;
-width: 100%;
-height: 304px;
-left: calc(65% - 1080px/2);
+position: absolute;
+margin-top: 0px;
+width: 1080px;
+height: 591px;
+left: calc(50% - 1080px/2);
+top: 350px;
 border-radius: 10px;
-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+${mobile({  marginTop: "0px", width: "358px", height: "195px", marginLeft: "93%"  })}
 `;
 const Companies = () => {
   const [index, setIndex] = useState(0);
@@ -55,7 +57,11 @@ const Companies = () => {
         />
       </Info>
 
-      <Carousel>
+      <ImgContainer>
+        <Image src={"https://i.ibb.co/yWCYTfh/bmc.png"} />
+      </ImgContainer>
+
+      {/* <Carousel>
         <ImgContainer>
           <Image src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg" />
 
@@ -68,47 +74,8 @@ const Companies = () => {
           <Image src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-chateau-de-chenonceau.jpg" />
 
         </ImgContainer>
-      </Carousel>
+      </Carousel> */}
 
-      {/* <Carousel>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel> */}
 
 
     </Container>

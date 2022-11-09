@@ -50,7 +50,6 @@ const sublinks = [
 export const reviewInfo = [
   {
     id: 1,
-    img: "https://images.unsplash.com/photo-1521820298019-160c4bc0dc91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=659&q=80",
     title: "Trusted by founders and investors",
     desc: "Join thousands of founders from more than 140 countries who have formed their companies using Stripe Atlas, with a best-in-class legal structure that’s built for scale. Stripe Atlas companies have raised more than $2 billion in funding.",
     logo: <svg className="Icon " viewBox="0 0 39 37" xmlns="http://www.w3.org/2000/svg" width={39} height={37}>
@@ -63,7 +62,6 @@ export const reviewInfo = [
 
   {
     id: 2,
-    img: "https://images.unsplash.com/photo-1512977141980-8cc662e38a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     title: "Access Stripe’s financial tools",
     desc: "Use your Stripe account to access powerful and flexible tools for internet commerce. Stripe’s meticulously designed APIs and unmatched functionality help you create the best possible product for your users.",
     logo: <svg className="Icon " width={40} height={40} viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
@@ -75,10 +73,9 @@ export const reviewInfo = [
 
   {
     id: 3,
-    img: "https://images.unsplash.com/photo-1633990212781-ab04323f58f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
     title: "Grow and scale with free credits",
     desc: "Every dollar matters when you start your company. Sign up for discounts from our partners, including Amazon Web Services, legal and accounting firms, and more.",
-    logo: <svg className="AnimatedIcon__icon" width={96} height={96} preserveAspectRatio="xMinYMin" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" data-js-controller="PricingIcon">
+    logo: <svg className="AnimatedIcon__icon" width={40} height={40} preserveAspectRatio="xMinYMin" viewBox="10 30 40 40" xmlns="http://www.w3.org/2000/svg" data-js-controller="PricingIcon">
       <defs>
         <path id="pricingIconTag" d="M41.4 30.38l8.4 8.27A4 4 0 0 1 51 41.5V62a3 3 0 0 1-3 3H32a3 3 0 0 1-3-3V41.5a4 4 0 0 1 1.2-2.85l8.4-8.27a2 2 0 0 1 2.8 0zM40 36a3 3 0 1 0 0 6 3 3 0 0 0 0-6z" />
         <clipPath id="pricingClipPath">
